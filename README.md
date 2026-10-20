@@ -3,10 +3,10 @@
 Thank you for taking the Confident LIMS engineering exercise. You will build a small
 Connect Four game:
 
-1. **Stage 1 (required, about 2 hours):** a basic React frontend and a basic Python
-   backend with only one endpoint, written by hand with no AI.
-2. **Stage 2 (optional, no more than 1 hour):** improve your project with an AI coding
-   agent of your choice.
+1. **Stage 1 (about 2 hours):** a basic React frontend and a basic Python backend with only
+   one endpoint, written by hand with no AI.
+2. **Stage 2 (about 1 hour):** improve your project with an AI coding agent of your choice,
+   and write down what you would do next with more time.
 
 There is no time limit. The times above are what we expect an experienced engineer to need.
 
@@ -86,8 +86,7 @@ these steps exactly:
    git log --oneline -3   # show this on the Zoom recording, then leave the meeting
    ```
 
-3. If you do Stage 2, start every Stage 2 commit message with `stage2:`, and when you are
-   done:
+3. Start every Stage 2 commit message with `stage2:`, and when you are done:
 
    ```bash
    git tag stage2-final
@@ -172,10 +171,14 @@ favor a working game over an unfinished one.
 - [ ] clean, readable code
 - [ ] tests
 
-## Stage 2: improve it with AI (optional, no more than 1 hour)
+## Stage 2: improve it with AI (about 1 hour)
 
 Use an AI coding agent of your choice to improve anything you like in your Stage 1 project.
-You decide what matters most. Please spend no more than an hour.
+You decide what matters most.
+
+An hour is a guide, not a limit: spend more or less as you see fit. You don't need to do
+everything you can think of. Put whatever you would do with more time in your next-steps
+document instead.
 
 - Start every commit message with `stage2:` and tag your last commit `stage2-final`.
 - Save and commit the complete, unedited AI session transcripts in `ai-transcripts/` (see
@@ -207,9 +210,8 @@ You decide what matters most. Please spend no more than an hour.
 ## Submit
 
 When you are done, open the submission form (the link in our email) again and fill it in once.
-It asks for your name, your email, your repo URL, the `stage1-final` commit SHA, the
-`stage2-final` commit SHA (leave it blank if you skipped Stage 2), and a statement that Stage 1
-is your own work without AI.
+It asks for your name, your email, your repo URL, the `stage1-final` and `stage2-final` commit
+SHAs, and a statement that Stage 1 is your own work without AI.
 
 **Use the same email address you used in your job application.** We use it to match your
 submission to your application.
