@@ -27,8 +27,11 @@ done. Please don't share your Zoom link.
    write access; we only read your code and never push to it.
 3. Clone your repo and check that both apps run (commands below). Keep these install, run
    and test commands working: we use them to run and test your code.
-4. Install the free [Zoom app](https://zoom.us/download) if you don't have it. You don't need
-   a Zoom account.
+4. Install the free [Zoom desktop app](https://zoom.us/download) if you don't have it. You
+   don't need a Zoom account. Use the app rather than joining from a web browser: screen
+   sharing is more reliable there. On a Mac, the first time you share, macOS asks you to
+   allow Zoom under **System Settings → Privacy & Security → Screen & System Audio
+   Recording**; turn it on and restart Zoom.
 
 You need [Node.js](https://nodejs.org/) 20 or newer and [Python](https://www.python.org/) 3.10
 or newer.
@@ -58,8 +61,10 @@ with a relative URL, for example `fetch("/evaluate_board_state", ...)`.
   Documentation, search and package docs are fine. Turn off AI features in your editor before
   you start.
 - **Record all of Stage 1 on your personal Zoom link.** Before you start Stage 1, join the link
-  and share your **entire screen** (not a single window). Recording starts automatically and
-  is saved to our account; there is nothing to upload. Camera and microphone are optional. To
+  and share your **entire screen** (not a single window): click **Share** (the green
+  **up-arrow ↑** button) in the toolbar at the bottom of the Zoom window, choose your whole
+  screen (shown as **Screen** or **Desktop**), then click **Share**. Recording starts
+  automatically and is saved to our account; there is nothing to upload. Camera and microphone are optional. To
   take a break, leave the meeting and rejoin the same link when you continue. Close anything
   private before you share your screen. End Stage 1 by running `git log --oneline -3` on
   screen (see *Commits and tags*), then leave the meeting. You don't need to record Stage 2.
