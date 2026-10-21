@@ -3,7 +3,7 @@
 Thank you for taking the Confident LIMS engineering exercise. You will build a small
 Connect Four game:
 
-1. **Stage 1 (about 2 hours):** a basic React frontend and a basic Python backend with only
+1. **Stage 1 (at most 2 hours):** a basic React frontend and a basic Python backend with only
    one endpoint, written by hand with no AI.
 2. **Stage 2 (about 1 hour):** improve your project with an AI coding agent of your choice,
    and write down what you would do next with more time.
