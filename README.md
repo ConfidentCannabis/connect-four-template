@@ -3,12 +3,15 @@
 Thank you for taking the Confident LIMS engineering exercise. You will build a small
 Connect Four game:
 
-1. **Stage 1 (at most 2 hours):** a basic React frontend and a basic Python backend with only
+1. **Stage 1 (2 hours at most):** a basic React frontend and a basic Python backend with only
    one endpoint, written by hand with no AI.
-2. **Stage 2 (about 1 hour):** improve your project with an AI coding agent of your choice,
+2. **Stage 2 (about 1 hour suggested):** improve your project with an AI coding agent of your choice,
    and write down what you would do next with more time.
 
-There is no time limit. The times above are what we expect an experienced engineer to need.
+**Time.** Stage 1 has a limit of **2 hours of recorded time** and no minimum: stop early
+if you're done. Your Zoom recording measures it, and breaks don't count because you leave the
+meeting during them. When you reach 2 hours, commit and tag what you have, even if it's
+unfinished. Stage 2 has no minimum or maximum; we suggest about an hour.
 
 **What we value.** We prefer a small amount of excellent work to a large amount of rough
 work. Work that is bug-free, thoughtful, clean and tested scores higher than extra features.
@@ -69,6 +72,9 @@ with a relative URL, for example `fetch("/evaluate_board_state", ...)`.
   take a break, leave the meeting and rejoin the same link when you continue. Close anything
   private before you share your screen. End Stage 1 by running `git log --oneline -3` on
   screen (see *Commits and tags*), then leave the meeting. You don't need to record Stage 2.
+- **Stage 1 is limited to 2 hours of recorded time.** Keep track of your sessions. At 2
+  hours, stop and make your final commit and tag (see *Commits and tags*), even if the game is
+  unfinished.
 - **Commit as you go**, at least every 30 minutes, and push to your repo.
 - At the technical interview you'll walk us through your Stage 1 code and make a small change
   to it without AI.
@@ -177,7 +183,7 @@ favor a working game over an unfinished one.
 - [ ] clean, readable code
 - [ ] tests
 
-## Stage 2: improve it with AI (about 1 hour)
+## Stage 2: improve it with AI (about 1 hour suggested)
 
 Use an AI coding agent of your choice to improve anything you like in your Stage 1 project.
 You decide what matters most.
