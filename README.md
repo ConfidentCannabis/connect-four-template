@@ -8,17 +8,20 @@ Connect Four game:
 2. **Stage 2 (about 1 hour suggested):** improve your project with an AI coding agent of your choice,
    and write down what you would do next with more time.
 
-**Time.** Stage 1 has a limit of **2 hours of recorded time** and no minimum: stop early
-if you're done. Your Zoom recording measures it, and breaks don't count because you leave the
-meeting during them. When you reach 2 hours, commit and tag what you have, even if it's
-unfinished. Stage 2 has no minimum or maximum; we suggest about an hour.
+**Time.** Stage 1 has a limit of **2 hours** and no minimum: stop early if you're done. It
+runs from when you click **Start** in our form to when you submit your Stage 1 commit in the
+same form, including setup and any breaks, so plan to do it in one sitting. When you reach 2
+hours, commit, tag and submit what you have, even if it's unfinished. Stage 2 runs from your
+Stage 1 submission to your Stage 2 submission; it has no minimum or maximum, and we suggest
+about an hour.
 
 **What we value.** We prefer a small amount of excellent work to a large amount of rough
 work. Work that is bug-free, thoughtful, clean and tested scores higher than extra features.
 
 Our email to you contains **your personal Zoom link**, used to record Stage 1, and the link
-to our **submission form**. Keep the form link: you'll come back to it to submit when you're
-done. Please don't share your Zoom link.
+to our **form**. You use the form three times: to start, which shows you this page, to submit
+your Stage 1 commit, and to submit your Stage 2 commit. Keep the form link, and please don't
+share your Zoom link.
 
 ## Setup (about 10 minutes)
 
@@ -69,12 +72,13 @@ with a relative URL, for example `fetch("/evaluate_board_state", ...)`.
   **up-arrow ↑** button) in the toolbar at the bottom of the Zoom window, choose your whole
   screen (shown as **Screen** or **Desktop**), then click **Share**. Recording starts
   automatically and is saved to our account; there is nothing to upload. Camera and microphone are optional. To
-  take a break, leave the meeting and rejoin the same link when you continue. Close anything
+  take a break, leave the meeting and rejoin the same link (your Stage 1 time keeps running). Close anything
   private before you share your screen. End Stage 1 by running `git log --oneline -3` on
-  screen (see *Commits and tags*), then leave the meeting. You don't need to record Stage 2.
-- **Stage 1 is limited to 2 hours of recorded time.** Keep track of your sessions. At 2
-  hours, stop and make your final commit and tag (see *Commits and tags*), even if the game is
-  unfinished.
+  screen (see *Commits and tags*), then leave the meeting and submit your Stage 1 commit in the
+  form right away. You don't need to record Stage 2.
+- **Stage 1 is limited to 2 hours**, from your Start in the form to your Stage 1 submission.
+  Breaks count. At 2 hours, stop, make your final commit and tag (see *Commits and tags*) and
+  submit, even if the game is unfinished.
 - **Commit as you go**, at least every 30 minutes, and push to your repo.
 - At the technical interview you'll walk us through your Stage 1 code and make a small change
   to it without AI.
@@ -98,12 +102,20 @@ these steps exactly:
    git log --oneline -3   # show this on the Zoom recording, then leave the meeting
    ```
 
+   Then submit the commit in the form right away (**Submit my Stage 1 commit**). This ends your
+   Stage 1 time and starts Stage 2.
+
 3. Start every Stage 2 commit message with `stage2:`, and when you are done:
 
    ```bash
    git tag stage2-final
    git push origin main stage2-final
    ```
+
+   Then submit the commit in the form right away (**Submit my Stage 2 commit**).
+
+We compare each submission with your commit and tag push times on GitHub, so submit within a
+few minutes of pushing.
 
 Do not rewrite history after tagging `stage1-final` (no rebase, amend or force-push).
 
@@ -221,11 +233,15 @@ document instead.
 
 ## Submit
 
-When you are done, open the submission form (the link in our email) again and fill it in once.
-It asks for your name, your email, your repo URL, the `stage1-final` and `stage2-final` commit
-SHAs, and a statement that Stage 1 is your own work without AI.
+Use the form from our email (the same one you started with) twice more:
 
-**Use the same email address you used in your job application.** We use it to match your
-submission to your application.
+1. **Submit my Stage 1 commit**, right after you push `stage1-final`: your repo URL, the
+   `stage1-final` commit SHA (`git rev-parse stage1-final^{commit}`), and a statement that
+   Stage 1 is your own work without AI.
+2. **Submit my Stage 2 commit**, right after you push `stage2-final`: the `stage2-final` commit
+   SHA and any notes for us.
+
+**Use the same email address you used in your job application, every time.** We use it to
+match your submissions to your application.
 
 Questions? Reply to the email we sent you.
