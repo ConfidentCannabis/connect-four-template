@@ -209,8 +209,8 @@ everything you can think of. Put whatever you would do with more time in your ne
 document instead.
 
 - Start every commit message with `stage2:` and tag your last commit `stage2-final`.
-- Save and commit the complete, unedited AI session transcripts in `ai-transcripts/` (see
-  *Exporting AI transcripts* below).
+- Save and commit the complete, unedited AI session transcripts in `ai-transcripts/` as
+  human-readable Markdown or text files (see *Exporting AI transcripts* below).
 - Add a few lines to this README under a **Stage 2** heading describing what you changed and
   why.
 - Commit a document (for example `NEXT_STEPS.md`) describing what you would do if you had more
@@ -226,14 +226,25 @@ document instead.
 
 ### Exporting AI transcripts
 
-- **Claude Code:** run `/export` in each session and save the file to `ai-transcripts/`. Raw
-  session logs are also stored as JSONL files under `~/.claude/projects/`.
-- **Codex CLI:** session logs are stored as JSONL files under `~/.codex/sessions/`. Copy the
-  sessions for this project.
-- **Cursor:** use the chat panel's export option for each chat, or copy the full chat.
-- **GitHub Copilot Chat (VS Code):** run **Chat: Export Chat...** from the command palette.
-- **Any other tool:** use its export feature, or copy and paste the full conversation into a
-  Markdown file.
+We read your transcripts, so they must be human-readable: Markdown (`.md`) or plain text
+(`.txt`), one file per session, numbered in order (for example `01-hover-preview.md`).
+Include every prompt and every response, in order, without editing. Only remove secrets
+such as API keys.
+
+Do not commit raw session logs (`.jsonl` or `.json` files, such as those under
+`~/.claude/projects/` or `~/.codex/sessions/`). We can't read them.
+
+- **Claude Code:** run `/export` at the end of each session, choose to save it to a file,
+  and move the file into `ai-transcripts/`.
+- **Codex (CLI, IDE extension or app):** use its Markdown export if your version has one;
+  otherwise select the whole conversation, copy it and paste it into a Markdown file.
+- **Cursor:** use the chat's **Export chat** option to save it as Markdown.
+- **GitHub Copilot Chat (VS Code):** right-click in the chat and choose **Copy All**, then
+  paste into a Markdown file. (**Chat: Export Chat...** saves JSON, which we can't read.)
+- **Any other tool:** use its Markdown or text export, or copy and paste the full
+  conversation into a Markdown file.
+
+Before you commit, open each file and check that you can read the conversation.
 
 ## Submit
 
