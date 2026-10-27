@@ -241,10 +241,12 @@ Both submissions are later steps in the form you started, not new forms. Keep it
 reopen the link in the same browser to pick up where you left off:
 
 1. **Submit my Stage 1 commit**, right after you push `stage1-final`: your repo URL, the
-   `stage1-final` commit SHA (`git rev-parse stage1-final^{commit}`), and a statement that
-   Stage 1 is your own work without AI.
+   `stage1-final` commit ID, and a statement that Stage 1 is your own work without AI.
 2. **Submit my Stage 2 commit**, right after you push `stage2-final`: the `stage2-final` commit
-   SHA and any notes for us.
+   ID and any notes for us.
+
+To get a commit ID, run `git log --oneline -1 stage1-final` (or `stage2-final`) and copy the
+short ID at the start of the line, for example `3f2c1ab`. The full 40-character SHA works too.
 
 **Use the same email address you used in your job application.** We use it to match your
 submissions to your application.
