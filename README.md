@@ -9,9 +9,10 @@ Connect Four game:
    and write down what you would do next with more time.
 
 **Time.** Stage 1 has a limit of **2 hours** and no minimum: stop early if you're done. It
-runs from when you click **Start** in our form to when you submit your Stage 1 commit in the
-same form, including setup and any breaks, so plan to do it in one sitting. When you reach 2
-hours, commit, tag and submit what you have, even if it's unfinished. Stage 2 runs from your
+runs from when you click **Start my Stage 1 time** in our form to when you submit your Stage 1
+commit later in the same form, including setup and any breaks, so plan to do it in one
+sitting. When you reach 2 hours, commit, tag and submit what you have, even if it's
+unfinished. Stage 2 runs from your
 Stage 1 submission to your Stage 2 submission; it has no minimum or maximum, and we suggest
 about an hour.
 
@@ -19,9 +20,11 @@ about an hour.
 work. Work that is bug-free, thoughtful, clean and tested scores higher than extra features.
 
 Our email to you contains **your personal Zoom link**, used to record Stage 1, and the link
-to our **form**. You use the form three times: to start, which shows you this page, to submit
-your Stage 1 commit, and to submit your Stage 2 commit. Keep the form link, and please don't
-share your Zoom link.
+to our **form**. You go through the form once, from start to finish: clicking **Start my
+Stage 1 time** shows you this page, and later steps in the same form are where you submit
+your Stage 1 commit and then your Stage 2 commit. Keep the form open in a browser tab (if you
+close it, reopen the link in the same browser to continue where you left off), and please
+don't share your Zoom link.
 
 ## Setup (about 10 minutes)
 
@@ -76,7 +79,7 @@ with a relative URL, for example `fetch("/evaluate_board_state", ...)`.
   private before you share your screen. End Stage 1 by running `git log --oneline -3` on
   screen (see *Commits and tags*), then leave the meeting and submit your Stage 1 commit in the
   form right away. You don't need to record Stage 2.
-- **Stage 1 is limited to 2 hours**, from your Start in the form to your Stage 1 submission.
+- **Stage 1 is limited to 2 hours**, from **Start my Stage 1 time** to your Stage 1 submission.
   Breaks count. At 2 hours, stop, make your final commit and tag (see *Commits and tags*) and
   submit, even if the game is unfinished.
 - **Commit as you go**, at least every 30 minutes, and push to your repo.
@@ -102,8 +105,8 @@ these steps exactly:
    git log --oneline -3   # show this on the Zoom recording, then leave the meeting
    ```
 
-   Then submit the commit in the form right away (**Submit my Stage 1 commit**). This ends your
-   Stage 1 time and starts Stage 2.
+   Then go back to the form and submit the commit right away (**Submit my Stage 1 commit**).
+   This ends your Stage 1 time and starts Stage 2.
 
 3. Start every Stage 2 commit message with `stage2:`, and when you are done:
 
@@ -112,7 +115,8 @@ these steps exactly:
    git push origin main stage2-final
    ```
 
-   Then submit the commit in the form right away (**Submit my Stage 2 commit**).
+   Then submit the commit in the form right away (**Submit my Stage 2 commit**). This finishes
+   the form.
 
 We compare each submission with your commit and tag push times on GitHub, so submit within a
 few minutes of pushing.
@@ -233,7 +237,8 @@ document instead.
 
 ## Submit
 
-Use the form from our email (the same one you started with) twice more:
+Both submissions are later steps in the form you started, not new forms. Keep it open, or
+reopen the link in the same browser to pick up where you left off:
 
 1. **Submit my Stage 1 commit**, right after you push `stage1-final`: your repo URL, the
    `stage1-final` commit SHA (`git rev-parse stage1-final^{commit}`), and a statement that
@@ -241,7 +246,7 @@ Use the form from our email (the same one you started with) twice more:
 2. **Submit my Stage 2 commit**, right after you push `stage2-final`: the `stage2-final` commit
    SHA and any notes for us.
 
-**Use the same email address you used in your job application, every time.** We use it to
-match your submissions to your application.
+**Use the same email address you used in your job application.** We use it to match your
+submissions to your application.
 
 Questions? Reply to the email we sent you.
