@@ -19,6 +19,10 @@ about an hour.
 **What we value.** We prefer a small amount of excellent work to a large amount of rough
 work. Work that is bug-free, thoughtful, clean and tested scores higher than extra features.
 
+**Who grades it.** People review and grade your work. We use AI only for objective checks on
+your code (for example running the tests) and for automations in our applicant tracking
+system.
+
 Our email to you contains **your personal Zoom link**, used to record Stage 1, and the link
 to our **form**. You go through the form once, from start to finish: clicking **Start my
 Stage 1 time** shows you this page, and later steps in the same form are where you submit
@@ -67,16 +71,20 @@ with a relative URL, for example `fetch("/evaluate_board_state", ...)`.
 
 ## Rules
 
-- **Stage 1 must be your own code.** Do not use AI assistants, AI code completion or AI chat.
-  Documentation, search and package docs are fine. Turn off AI features in your editor before
-  you start.
-- **Record all of Stage 1 on your personal Zoom link.** Before you start Stage 1, join the link
+- **Stage 1 must be your own code, with no AI and no help from other people.** Do not use AI
+  assistants, AI code completion or AI chat, and don't ask anyone for help. To be safe, turn
+  off AI features in your code editor and your browser before you start. You may search the
+  web and read documentation (for example the React, FastAPI or MDN docs), but skip any
+  AI-generated answers, such as AI summaries at the top of search results.
+- **Record all of Stage 1 on your personal Zoom link.** The recording is how you show that
+  you wrote Stage 1 without AI. Recording starts on its own as soon as you join, so get your
+  desktop ready first: close anything private and open what you'll need. Then join the link
   and share your **entire screen** (not a single window): click **Share** (the green
   **up-arrow ↑** button) in the toolbar at the bottom of the Zoom window, choose your whole
   screen (shown as **Screen** or **Desktop**), then click **Share**. Recording starts
-  automatically and is saved to our account; there is nothing to upload. Camera and microphone are optional. To
-  take a break, leave the meeting and rejoin the same link (your Stage 1 time keeps running). Close anything
-  private before you share your screen. End Stage 1 by running `git log --oneline -3` on
+  automatically and is saved to our account; there is nothing to upload. You don't need to turn
+  on your camera or microphone. To take a break, leave the meeting and rejoin the same link
+  (your Stage 1 time keeps running). End Stage 1 by running `git log --oneline -3` on
   screen (see *Commits and tags*), then leave the meeting and submit your Stage 1 commit in the
   form right away. You don't need to record Stage 2.
 - **Stage 1 is limited to 2 hours**, from **Start my Stage 1 time** to your Stage 1 submission.
@@ -213,8 +221,8 @@ document instead.
   human-readable Markdown or text files (see *Exporting AI transcripts* below).
 - Add a few lines to this README under a **Stage 2** heading describing what you changed and
   why.
-- Commit a document (for example `NEXT_STEPS.md`) describing what you would do if you had more
-  time (UI/UX improvements, new features, bug fixes, infrastructure, etc.).
+- Commit a `NEXT_STEPS.md` describing what you would do if you had more time (UI/UX
+  improvements, new features, bug fixes, infrastructure, etc.).
 
 ### What we look for
 
@@ -256,10 +264,11 @@ reopen the link in the same browser to pick up where you left off:
 2. **Submit my Stage 2 commit**, right after you push `stage2-final`: the `stage2-final` commit
    ID and any notes for us.
 
-To get a commit ID, run `git log --oneline -1 stage1-final` (or `stage2-final`) and copy the
-short ID at the start of the line, for example `3f2c1ab`. The full 40-character SHA works too.
+To get a commit ID, run `git rev-parse 'stage1-final^{commit}'` (or `stage2-final`) and paste
+what it prints. The short ID from `git log --oneline` (for example `3f2c1ab`) works too.
 
 **Use the same email address you used in your job application.** We use it to match your
-submissions to your application.
+submissions to your application, and your Zoom recording is attached to your application
+automatically.
 
 Questions? Reply to the email we sent you.
