@@ -19,9 +19,9 @@ about an hour.
 **What we value.** We prefer a small amount of excellent work to a large amount of rough
 work. Work that is bug-free, thoughtful, clean and tested scores higher than extra features.
 
-**Who grades it.** People review and grade your work. We use AI only for objective checks on
-your code (for example running the tests) and for automations in our applicant tracking
-system.
+**Who grades it.** People review and grade your work. We also use AI to scan your code for
+security risks and to write review notes that our reviewers read alongside your code; it never
+sets your score.
 
 Our email to you contains **your personal Zoom link**, used to record Stage 1, and the link
 to our **form**. You go through the form once, from start to finish: clicking **Start my
