@@ -33,8 +33,7 @@ don't share your Zoom link.
 ## Setup (about 10 minutes)
 
 1. Click **Use this template** at the top of this page and create a **private** repo in your
-   own GitHub account. Keep `connect-four` in the repo name (for example `connect-four`):
-   our grading account accepts invitations only to repos named that way.
+   own GitHub account (any name, for example `connect-four`).
 2. Invite our reviewers **@salbarran**, **@KN3LL2K** and **@eatpie75**,
    and our grading account **@confident-interview-bot**, as collaborators
    (**Settings → Collaborators → Add people**). GitHub gives collaborators on a personal repo
