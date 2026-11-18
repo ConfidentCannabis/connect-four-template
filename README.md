@@ -34,8 +34,8 @@ don't share your Zoom link.
 
 1. Click **Use this template** at the top of this page and create a **private** repo in your
    own GitHub account (any name, for example `connect-four`).
-2. Invite our reviewers **@salbarran**, **@KN3LL2K** and **@eatpie75**,
-   and our grading account **@confident-interview-bot**, as collaborators
+2. Invite our reviewers **salbarran** (Steve), **KN3LL2K** (Harry) and **eatpie75** (Colin),
+   and our grading account **confident-interview-bot**, as collaborators
    (**Settings → Collaborators → Add people**). GitHub gives collaborators on a personal repo
    write access; we only read your code and never push to it.
 3. Clone your repo and check that both apps run (commands below). Keep these install, run
